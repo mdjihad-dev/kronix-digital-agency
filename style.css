@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-    background-color: black;
+}
+
+body {
+     background-color: black;
+     padding: 0 20px;
 }
 
             /*======= Header section ====== */
@@ -15,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+    position: relative;
 }
 .brand-name{
     color: white;
@@ -47,9 +52,16 @@
     font-weight: 600;
     transition:  all 0.2 ease;
 }
-
+.menu-toggle {
+    display: none;
+}
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
 /* == Hero Section == */
-.hero-section {
+.section-heading {
     padding: 110px 0;
     color: white;
     max-width: 1200px;
@@ -72,4 +84,88 @@
     font-size: 18px;
     line-height: 30px;
     margin: 35px 0;
+}
+
+/* == Brand Section ==*/
+.brand-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 0;
+    background-color: #222222;
+    border-radius: 20px;
+    padding: 30px 0;
+}
+.brand-title {
+    text-align: center;
+
+}
+.brand-logo {
+    width: 195px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+
+                             /* ===================
+                                Responsive Design
+                               ===================*/
+                               
+@media screen and (max-width: 678px) {
+
+    .menu-btn {
+        display: block;
+        color: white;
+        order: -1;
+    }
+    .main-nav{
+        display: none;
+    }
+    .header-btn {
+        display: none;
+    }
+    .menu-toggle:checked ~ .main-nav{
+        display: block;
+    }
+    .main-nav {
+        position: absolute;
+        top: 70%;
+        left: -41px;
+        width: 73%;
+        padding: 20px;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding: 20px;
+        background-color: darkslategray;
+    }
+
+    /* Hero section */
+    .hero-title {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .hero-section {
+        padding: 30px 0;
+    }
+    .hero-description {
+        font-size: 13px;
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    /* Brand Section */
+    .brand-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .brand-logo {
+     justify-content: center;
+    
+}
+
+
 }
