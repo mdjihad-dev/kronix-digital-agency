@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    background-color: black;
+}
+
+            /*======= Header section ====== */
+
+.navbar-contaner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.brand-name{
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.brand-name span {
+    color: #B9FD50;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+.nav-list a{
+    color: white;
+    font-family: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 03s ease;
+}
+.btn-Primary {
+    padding: 12px 24px;
+    border-radius: 15px;
+    background-color: #B9FD50;
+    text-decoration: none;
+    font-weight: 600;
+    transition:  all 0.2 ease;
+}
+
+/* == Hero Section == */
+.hero-section {
+    padding: 110px 0;
+    color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.hero-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero-title {
+    font-size: 95px;
+    line-height: 103px;
+    font-weight: bold;
+}
+.hero-title span {
+    color: #B9FD50;
+}
+.hero-description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 35px 0;
+}
