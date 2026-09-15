@@ -61,7 +61,7 @@ body {
     font-size: 24px;
 }
 /* == Hero Section == */
-.section-heading {
+.section-heading, .capabilities-container {
     padding: 110px 0;
     color: white;
     max-width: 1200px;
@@ -166,8 +166,84 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 28px;
+    color: #9593A4;
 }
 
+
+/* === Our Bewtifull work section === */
+.our-work-section {
+    background-color: #FFFFFF;
+    color: black;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    max-width: 100%;
+}
+.section-title {
+    text-align: center;
+}
+.section-title h3 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    color: #111204;
+}
+.section-title p {
+    font-size: 17px;
+    margin: 20px 0;
+}
+.our-work-container {
+    padding: 80px 0px;
+}
+.work-content{
+    display: flex;
+    justify-content: space-between;
+}
+.work-content > img {
+    width: 270px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+.section-btn {
+    padding: 12px 24px;
+    border-radius: 15px;
+    background: transparent;
+    text-decoration: none;
+    font-weight: 600;
+    transition:  all 0.2 ease;
+    border: 1px solid black;
+}
+
+/* ===Our capabilities section === */
+.capabilities-content {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.capabilities-content h3 {
+    margin: 30px 0;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 58px;
+}
+.capabilities-btn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+    gap: 25px;
+}
+.capabilities-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 80px 0;
+}
+.capabilities-card {
+    border: 1px solid #2e2525;
+    padding: 28px;
+}
                              /* ===================
                                 Responsive Design
                                ===================*/
@@ -245,6 +321,31 @@ body {
     }
     .work-right {
         margin-left: 0rem;
+    }
+
+    /*  */
+    .subscribe-section {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start;
+    }
+
+    /* == Our work section */
+    .work-content{
+        flex-direction: column-reverse;
+    }
+    .section-title p {
+        font-size: 13px;
+    }
+    .work-content > img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .capabilities-section {
+        grid-template-columns: 1fr;
     }
 
 
