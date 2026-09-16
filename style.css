@@ -602,6 +602,7 @@ body {
     .brand-container {
         flex-direction: column;
         gap: 30px;
+        width: 107%;
     }
 
     .brand-logo {
@@ -629,7 +630,7 @@ body {
         flex-direction: column;
         gap: 3rem;
         padding: 15px;
-        margin: 3rem 0;
+        margin: 3rem 18px;
         align-items: flex-start;
     }
 
@@ -646,6 +647,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .capabilities-container {
+        margin-right: -12px;
+        margin-left: 12px;
+    }
     .capabilities-section {
         grid-template-columns: 1fr;
     }
